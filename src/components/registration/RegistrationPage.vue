@@ -2,8 +2,11 @@
   <div id="registration-page">
     <div class="main_header-box">
       <h1 class="main_header">
-        Social Global
+        <i class="fas fa-cannabis"></i> NoteMePro
       </h1>
+    </div>
+    <div class="title__some-text">
+      Who will be the next Noter?
     </div>
     <v-stepper v-model="e1">
       <v-stepper-header>
@@ -30,8 +33,8 @@
         <v-stepper-content step="1">
           <v-card
             class="mb-5"
-            :color="firstName.length > 2 && lastName.length > 2 && !$v.phoneNumber.$error &&
-              phoneNumber.length > 9 ? 'orange darken-1' : 'grey lighten-2'"
+            :color="firstName.length > 2 && lastName.length > 2 && !$v.phoneNumber.$error
+              && username.length > 2 ? 'orange darken-1' : 'grey lighten-2'"
             height="200px"
             style="display: flex; align-items: center; flex-direction: column;
              justify-content: center"
@@ -202,7 +205,7 @@
             class="sign-up_btn"
             color="orange"
             @click="goSignUp"
-          >
+          > <!-- phoneNumber.length > 9 -->
             Sign up
           </v-btn>
           <v-btn
@@ -230,6 +233,7 @@ export default {
       checkShowPass: false,
       firstName: '',
       lastName: '',
+      username: '',
       phoneNumber: null,
       writePass: '',
       confirmPass: '',
@@ -263,13 +267,18 @@ export default {
   #registration-page
     display flex
     flex-direction column
-    justify-content center
     align-items center
+    height 100%
+    /*background-color: #e65700*/
+    background linear-gradient(to bottom, orange, #e65700)
   .main_header-box
-    padding 30px 0 20px 0
+    padding 30px 0 10px 0
   .main_header
     font-size 50px
     font-weight bold
+  .title__some-text
+    font-weight bold
+
   .sign-up_btn:focus
     outline none
   .cancel_btn:focus

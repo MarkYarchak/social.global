@@ -18,6 +18,9 @@ export default {
     FixedHigh,
     FixedLeft,
   },
+  // beforeCreate() {
+  //   this.$router.push('/profile');
+  // },
 };
 </script>
 

@@ -7,7 +7,7 @@
 <script>
 
 export default {
-  name: 'GlobalSocial',
+  name: 'NoteMePro',
   components: {
   },
   data() {

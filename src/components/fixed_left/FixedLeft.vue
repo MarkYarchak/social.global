@@ -1,15 +1,22 @@
 <template>
   <div id="fixed-left">
     <div class="fixed-left">
-      <div class="fixed-left__profile-box">
-      </div>
+      <FixedLeftUserBox />
+      <FixedLeftPagesList />
     </div>
   </div>
 </template>
 
 <script>
+import FixedLeftUserBox from './FixedLeftUserBox';
+import FixedLeftPagesList from './FixedLeftPagesList';
+
 export default {
   name: 'FixedLeft',
+  components: {
+    FixedLeftUserBox,
+    FixedLeftPagesList,
+  },
 };
 </script>
 
@@ -19,7 +26,7 @@ export default {
   #fixed-left
     position fixed
     left 0
-    top 5%
+    top 67px
     max-width 300px
     background-color: #e65700
     height 100%

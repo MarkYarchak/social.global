@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import RegistrationPage from './components/registration/RegistrationPage';
+import WelcomePage from './components/account_entered/WelcomePage';
 import FullSignUpPage from './components/account_entered/FullSignUpPage';
 import MainProfile from './components/profile/MainProfile';
 import AccountFriends from './components/friends/AccountFriends';
@@ -29,6 +30,11 @@ export default new Router({
       component: FullSignUpPage,
       path: '/',
       children: [
+        {
+          name: 'WelcomePage',
+          component: WelcomePage,
+          path: '/',
+        },
         {
           name: 'MainProfile',
           component: MainProfile,
@@ -86,4 +92,7 @@ export default new Router({
       component: FullSignUpPage,
     },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) return savedPosition;
+  },
 });

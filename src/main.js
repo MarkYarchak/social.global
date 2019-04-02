@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import './plugins/vuetify';
 import Vuelidate from 'vuelidate';
-import GlobalSocial from './GlobalSocial';
+import GlobalSocial from './NoteMePro';
 import router from './router';
 import store from './store';
 import './registerServiceWorker';
