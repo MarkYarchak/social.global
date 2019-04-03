@@ -16,21 +16,19 @@
         </button>
       </div>
       <v-spacer />
-      <div class="fixed-high__exit-box exit-box">
-        <div
-          class="exit-box__exit"
-          @click="$router.push('/registration')"
-        >
-          <i class="fas fa-sign-out-alt fa-2x"></i>
-        </div>
-      </div>
+      <FixedHighExitBtn />
     </div>
   </div>
 </template>
 
 <script>
+import FixedHighExitBtn from './FixedHighExitBtn';
+
 export default {
   name: 'FixedHigh',
+  components: {
+    FixedHighExitBtn,
+  },
 };
 </script>
 
@@ -39,12 +37,12 @@ export default {
         scoped>
   @import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Bree+Serif|Playfair+Display');
   #fixed-high
+    z-index 5
     display flex
     align-items center
     position sticky
     top 0
     background linear-gradient(to bottom, #cd2a00, #FE8C00)
-    margin-bottom 10px
   /*box-shadow 0 1px 7px 5px #e77314*/
   .fixed-high
     width 100%

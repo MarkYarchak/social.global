@@ -14,7 +14,7 @@
 
               <v-divider class="my-3"></v-divider>
 
-              <div class="title mb-3">Now enjoy it!</div>
+              <div class="title mb-3">Enjoy it now!</div>
 
               <v-btn
                 class="mx-0"

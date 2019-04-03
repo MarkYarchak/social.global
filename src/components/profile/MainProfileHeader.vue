@@ -1,21 +1,20 @@
 <template>
   <div id="main-profile-header">
     <div class="main-profile-header">
-      <div class="main-profile-header__main-photo-box main-photo-box">
-        <div
-          :style="{'background-image': `url(${user.avatar})`}"
-          class="main-photo-box__main-photo"
-        ></div>
-      </div>
+      <MainProfileTopMenu />
     </div>
   </div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex';
+import MainProfileTopMenu from './MainProfileTopMenu';
 
 export default {
   name: 'MainProfileHeader',
+  components: {
+    MainProfileTopMenu,
+  },
   computed: {
     ...mapGetters([
       'user',
@@ -27,10 +26,4 @@ export default {
 <style
   lang="stylus"
         scoped>
-  #main-profile-header
-    padding 20px
-  .main-photo-box__main-photo
-    width 300px
-    height 370px
-    background center center/cover no-repeat coral
 </style>

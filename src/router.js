@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import store from './store';
 import RegistrationPage from './components/registration/RegistrationPage';
 import WelcomePage from './components/account_entered/WelcomePage';
 import FullSignUpPage from './components/account_entered/FullSignUpPage';
@@ -33,12 +34,12 @@ export default new Router({
         {
           name: 'WelcomePage',
           component: WelcomePage,
-          path: '/',
+          path: '/welcome',
         },
         {
           name: 'MainProfile',
           component: MainProfile,
-          path: '/profile',
+          path: `/${store.state.user.id}`,
         },
         {
           name: 'AccountFriends',

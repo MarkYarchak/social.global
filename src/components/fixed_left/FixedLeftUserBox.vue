@@ -11,7 +11,7 @@
         <div class="title-box__header-box header-box">
           <div
             class="header-box__header"
-            @click="$router.push('/profile')"
+            @click="$router.push(`/${user.id}`)"
           >
             {{ user.firstName }} {{ user.lastName }}
           </div>
@@ -19,7 +19,7 @@
         <div class="title-box__subheader-box subheader-box">
           <div
             class="subheader-box__subheader"
-            @click="$router.push('/profile')"
+            @click="$router.push(`/${user.id}`)"
           >
             {{ user.username }}
           </div>
@@ -136,7 +136,8 @@ export default {
   .profile-box__small-menu-box
     position fixed
     background-color #ffb351
-    left 297px
+    left 280px
+    //left 297px
     user-select none
     -moz-user-select none
     -ms-user-select none

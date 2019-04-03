@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 import FixedHigh from '../fixed_high/FixedHigh';
 import FixedLeft from '../fixed_left/FixedLeft';
 
@@ -18,9 +19,14 @@ export default {
     FixedHigh,
     FixedLeft,
   },
-  // beforeCreate() {
-  //   this.$router.push('/profile');
-  // },
+  computed: {
+    ...mapGetters([
+      'user',
+    ]),
+  },
+  beforeCreate() {
+    this.$router.push(`/${this.$store.state.user.id}`);
+  },
 };
 </script>
 
@@ -28,5 +34,5 @@ export default {
   lang="stylus"
         scoped>
   .box-view_content
-    margin-left 320px
+    margin-left 300px
 </style>

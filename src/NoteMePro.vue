@@ -17,3 +17,10 @@ export default {
   },
 };
 </script>
+
+<style
+lang="stylus"
+>
+  #app
+    /*color white*/
+</style>
