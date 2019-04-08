@@ -1,1 +1,149 @@
-[]
+[
+  {
+    "id": 777,
+    "firstName": "Mark",
+    "lastName": "Yarchak",
+    "username": "@mark.yarchak",
+    "avatar": "https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "followers": [],
+    "unfollowers": [],
+    "friends": [],
+    "music": {
+      "likedMusic": [],
+      "playlists": []
+    },
+    "groups": {
+      "myGroups": [],
+      "followedGroups": []
+    },
+    "messages": [],
+    "notes": [],
+    "posts": []
+  },
+  {
+    "id": 333,
+    "firstName": "Klara",
+    "lastName": "Nicle",
+    "username": "@klara",
+    "avatar": "https://images.pexels.com/photos/2049422/pexels-photo-2049422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "followers": [],
+    "unfollowers": [],
+    "friends": [],
+    "music": {
+      "likedMusic": [],
+      "playlists": []
+    },
+    "groups": {
+      "myGroups": [],
+      "followedGroups": []
+    },
+    "messages": [],
+    "notes": [],
+    "posts": []
+  },
+  {
+    "id": 888,
+    "firstName": "Lion",
+    "lastName": "Thenix",
+    "username": "@thenixxx",
+    "avatar": "https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "followers": [],
+    "unfollowers": [],
+    "friends": [],
+    "music": {
+      "likedMusic": [],
+      "playlists": []
+    },
+    "groups": {
+      "myGroups": [],
+      "followedGroups": []
+    },
+    "messages": [],
+    "notes": [],
+    "posts": []
+  },
+  {
+    "id": 999,
+    "firstName": "Lilia",
+    "lastName": "Kuliychuk",
+    "username": "@kul_li",
+    "avatar": "https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "followers": [],
+    "unfollowers": [],
+    "friends": [],
+    "music": {
+      "likedMusic": [],
+      "playlists": []
+    },
+    "groups": {
+      "myGroups": [],
+      "followedGroups": []
+    },
+    "messages": [],
+    "notes": [],
+    "posts": []
+  },
+  {
+    "id": 555,
+    "firstName": "Nick",
+    "lastName": "Beillon",
+    "username": "@nicky",
+    "avatar": "https://images.pexels.com/photos/934964/pexels-photo-934964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "followers": [],
+    "unfollowers": [],
+    "friends": [],
+    "music": {
+      "likedMusic": [],
+      "playlists": []
+    },
+    "groups": {
+      "myGroups": [],
+      "followedGroups": []
+    },
+    "messages": [],
+    "notes": [],
+    "posts": []
+  },
+  {
+    "id": 444,
+    "firstName": "Edvard",
+    "lastName": "Ursum",
+    "username": "@mitch",
+    "avatar": "https://images.pexels.com/photos/449627/pexels-photo-449627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "followers": [],
+    "unfollowers": [],
+    "friends": [],
+    "music": {
+      "likedMusic": [],
+      "playlists": []
+    },
+    "groups": {
+      "myGroups": [],
+      "followedGroups": []
+    },
+    "messages": [],
+    "notes": [],
+    "posts": []
+  },
+  {
+    "id": 111,
+    "firstName": "Yulia",
+    "lastName": "Harris",
+    "username": "@yulianna",
+    "avatar": "https://images.pexels.com/photos/145939/pexels-photo-145939.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "followers": [],
+    "unfollowers": [],
+    "friends": [],
+    "music": {
+      "likedMusic": [],
+      "playlists": []
+    },
+    "groups": {
+      "myGroups": [],
+      "followedGroups": []
+    },
+    "messages": [],
+    "notes": [],
+    "posts": []
+  }
+]

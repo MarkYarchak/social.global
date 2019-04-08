@@ -11,7 +11,7 @@
         <div class="title-box__header-box header-box">
           <div
             class="header-box__header"
-            @click="$router.push(`/${user.id}`)"
+            @click="$router.push(`/${user.username}`)"
           >
             {{ user.firstName }} {{ user.lastName }}
           </div>
@@ -19,7 +19,7 @@
         <div class="title-box__subheader-box subheader-box">
           <div
             class="subheader-box__subheader"
-            @click="$router.push(`/${user.id}`)"
+            @click="$router.push(`/${user.username}`)"
           >
             {{ user.username }}
           </div>

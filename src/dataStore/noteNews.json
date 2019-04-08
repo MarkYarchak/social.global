@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "isEdited": false,
+    "author": {
+      "id": 777,
+      "firstName": "Mark",
+      "lastName": "Yarchak",
+      "username": "@mark.yarchak",
+      "avatar": "https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    "createDate": [2019, 4, 1],
+    "text": "",
+    "image": "",
+    "comments": [],
+    "likes": []
+  },
+  {
+    "id": 2,
+    "isEdited": true,
+    "author": {
+      "id": 888,
+      "firstName": "Lion",
+      "lastName": "Thenix",
+      "username": "@thenixxx",
+      "avatar": "https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    "createDate": [2019, 3, 24],
+    "text": "",
+    "image": "",
+    "comments": [],
+    "likes": []
+  },
+  {
+    "id": 3,
+    "isEdited": false,
+    "author": {
+      "id": 999,
+      "firstName": "Lilia",
+      "lastName": "Kuliychuk",
+      "username": "@kul_li",
+      "avatar": "https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    "createDate": [2019, 2, 18],
+    "text": "",
+    "image": "",
+    "comments": [],
+    "likes": []
+  },
+  {
+    "id": 4,
+    "isEdited": true,
+    "author": {
+      "id": 444,
+      "firstName": "Edvard",
+      "lastName": "Ursum",
+      "username": "@mitch",
+      "avatar": "https://images.pexels.com/photos/449627/pexels-photo-449627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    "createDate": [2019, 1, 11],
+    "text": "",
+    "image": "",
+    "comments": [],
+    "likes": []
+  }
+]

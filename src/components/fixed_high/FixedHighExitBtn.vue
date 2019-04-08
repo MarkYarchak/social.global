@@ -10,6 +10,7 @@
             :color="changeBtnTheme ? 'yellow lighten-2' : 'black lighten-2'"
             dark
             flat
+            class="button-to-exit"
             @mouseenter="changeBtnTheme = true"
             @mouseleave="changeBtnTheme = false"
             v-on="on"
@@ -37,6 +38,7 @@
             <v-btn
               color="primary"
               flat
+              class="button-to-exit"
               @click="$router.push('/registration')"
             >
               Yes
@@ -63,5 +65,6 @@ export default {
 <style
   lang="stylus"
         scoped>
-
+  .button-to-exit:active
+    outline none
 </style>

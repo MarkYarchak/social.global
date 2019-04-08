@@ -25,7 +25,7 @@ export default {
     ]),
   },
   beforeCreate() {
-    this.$router.push(`/${this.$store.state.user.id}`);
+    if (this.$router.currentRoute.fullPath === '/') this.$router.push(`/${this.$store.state.user.username}`);
   },
 };
 </script>

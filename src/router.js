@@ -11,7 +11,7 @@ import AccountMusic from './components/music/AccountMusic';
 import AccountNotes from './components/notes/AccountNotes';
 import AccountGroups from './components/groups/AccountGroups';
 import AccountNotifications from './components/notification/AccountNotifications';
-import IncomingPosts from './components/posts/IncomingPosts';
+import NoteNews from './components/note-news/NoteNews';
 import AccountSettings from './components/settings/AccountSettings';
 import AccountHelp from './components/help/AccountHelp';
 
@@ -39,7 +39,7 @@ export default new Router({
         {
           name: 'MainProfile',
           component: MainProfile,
-          path: `/${store.state.user.id}`,
+          path: `/${store.state.user.username}`,
         },
         {
           name: 'AccountFriends',
@@ -72,9 +72,9 @@ export default new Router({
           path: '/notifications',
         },
         {
-          name: 'IncomingPosts',
-          component: IncomingPosts,
-          path: '/posts',
+          name: 'NoteNews',
+          component: NoteNews,
+          path: '/note-news',
         },
         {
           name: 'AccountSettings',

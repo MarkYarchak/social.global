@@ -24,6 +24,7 @@ export default {
   lang="stylus"
         scoped>
   #fixed-left
+    z-index 2
     position fixed
     left 0
     top 67px

@@ -5,7 +5,7 @@ import playlists from '../dataStore/playlists';
 import myGroups from '../dataStore/myGroups';
 import followedGroups from '../dataStore/followedGroups';
 import messages from '../dataStore/messages';
-import posts from '../dataStore/posts';
+import noteNews from '../dataStore/noteNews';
 import notes from '../dataStore/notes';
 
 export default {
@@ -28,6 +28,6 @@ export default {
     },
     messages,
     notes,
-    posts,
+    noteNews,
   },
 };

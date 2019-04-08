@@ -23,4 +23,5 @@ lang="stylus"
 >
   #app
     /*color white*/
+    background-color: #fff
 </style>

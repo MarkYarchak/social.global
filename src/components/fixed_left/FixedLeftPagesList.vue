@@ -61,9 +61,9 @@ export default {
           path: '/notifications',
         },
         {
-          name: 'Posts',
-          icon: 'fas fa-th-list',
-          path: '/posts',
+          name: 'Note-news',
+          icon: 'fas fa-newspaper', // 'fas fa-th-list',
+          path: '/note-news',
         },
         {
           name: 'Settings',

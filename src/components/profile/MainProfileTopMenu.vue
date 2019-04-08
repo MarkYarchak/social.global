@@ -1,56 +1,73 @@
 <template>
   <div id="main-profile_top-menu">
-    <div class="main-profile_top-menu animated slideInDown">
-      <router-link
-        v-for="(item, key) in topIcons"
-        :key="key"
-        :to="item.path"
-        exact
-        active-class="active"
-        tag="div"
-        class="main-profile_top-menu__one-icon-box one-icon-box"
+    <div class="menu-tabs">
+      <v-tabs
+        v-model="active"
+        slider-color="none"
       >
-        <div class="one-icon-box__one-icon">
-          <i :class="item.icon"></i>
-        </div>
-        <div class="one-icon-box__text">
-          {{ item.text }}
-        </div>
-      </router-link>
+        <v-tab
+          v-for="(item, key) in topIcons"
+          :key="key"
+          class="main-profile_top-menu animated slideInDown"
+        >
+          <div class="main-profile_top-menu__one-icon-box one-icon-box">
+            <div class="one-icon-box__one-icon">
+              <i
+                :class="item.icon"
+                data-fa-transform="grow-5"
+              ></i>
+            </div>
+            <div class="one-icon-box__text">
+              {{ item.text }}
+            </div>
+          </div>
+        </v-tab>
+        <v-tab-item
+          v-for="(item, key) in topIcons"
+          :key="key"
+        >
+          <v-card flat>
+            <div class="tab-view">
+              <MainProfileUserTab v-if="item.text === 'Profile'" />
+            </div>
+          </v-card>
+        </v-tab-item>
+      </v-tabs>
     </div>
   </div>
 </template>
 
 <script>
+import MainProfileUserTab from './MainProfileUserTab';
+
 export default {
   name: 'MainProfileTopMenu',
+  components: {
+    MainProfileUserTab,
+  },
   data() {
     return {
+      active: null,
       topIcons: [
         {
           icon: 'fas fa-user fa-lg',
           text: 'Profile',
-          path: '',
         },
         {
           icon: 'fas fa-sticky-note fa-lg',
           text: 'Public notes',
-          path: '',
         },
         {
           icon: 'fas fa-user-friends fa-lg',
           text: 'Friends',
-          path: '',
         },
         {
           icon: 'fas fa-music fa-lg',
-          text: 'Liked music',
-          path: '',
+          text: 'Noted music',
         },
         {
           icon: 'fas fa-users fa-lg',
-          text: 'Groups',
-          path: '',
+          text: 'Noted groups',
         },
       ],
     };
@@ -64,12 +81,14 @@ export default {
   #main-profile_top-menu
     display flex
     /*margin 0 0 0 5px*/
+  .menu-tabs
+    width 100%
   .main-profile_top-menu
     display flex
+    flex-direction column
     justify-content space-around
     align-items center
     width 100%
-    height: 60px
     background-color: #FE8C00
     //background linear-gradient(to bottom, #64C8BD, #094A6F)
     /*box-shadow 1px 0.5px 5px 0.2px grey*/
@@ -77,7 +96,6 @@ export default {
     transition 0.6s
   .main-profile_top-menu__one-icon-box:hover
     transition 0.2s
-    background-color: yellow
   .main-profile_top-menu__one-icon-box
     padding 7px
     border-radius 5px
@@ -92,4 +110,6 @@ export default {
   .one-icon-box__text
     font-weight bold
     padding-top 4px
+  .tab-view
+    padding 20px
 </style>
