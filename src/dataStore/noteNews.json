@@ -9,10 +9,11 @@
       "username": "@mark.yarchak",
       "avatar": "https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     },
-    "createDate": [2019, 4, 1],
-    "text": "",
-    "image": "",
+    "createDate": [2019, 3, 7],
+    "text": "Animi corporis deleniti dicta dolorum earum et, illo ipsa nesciunt, nihil optio quas qui quo quos ratione sunt tenetur voluptates voluptatum! A animi assumenda culpa eius esse fugiat in ipsum iure iusto laborum laudantium magnam minus molestias natus nemo nisi nostrum nulla omnis perspiciatis quibusdam quod ratione rem saepe ut, veritatis! A accusantium consequatur deleniti deserunt dicta distinctio dolore ea esse facilis harum in, ipsa ipsam, itaque nemo neque obcaecati officiis placeat possimus quasi quod suscipit temporibus, vitae! Amet atque harum magnam nemo odit. Deserunt et, vero. Doloremque maxime nisi numquam odio?",
+    "image": "https://images.pexels.com/photos/556416/pexels-photo-556416.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     "comments": [],
+    "republish": [],
     "likes": []
   },
   {
@@ -25,10 +26,11 @@
       "username": "@thenixxx",
       "avatar": "https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     },
-    "createDate": [2019, 3, 24],
-    "text": "",
+    "createDate": [2019, 3, 1],
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab eaque iusto nisi perferendis quas qui quisquam quos recusandae. Commodi dignissimos eaque est facere maiores recusandae vitae. Beatae eligendi necessitatibus omnis quibusdam quidem soluta tempora voluptate. Accusamus accusantium amet asperiores consequatur cum delectus dicta, eius eveniet itaque nobis nostrum odio, pariatur perferendis quasi quia rem velit veritatis voluptatum! Adipisci, perspiciatis, quasi!",
     "image": "",
     "comments": [],
+    "republish": [],
     "likes": []
   },
   {
@@ -42,9 +44,10 @@
       "avatar": "https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     },
     "createDate": [2019, 2, 18],
-    "text": "",
-    "image": "",
+    "text": "Adipisicing elit. Aliquam aperiam aut beatae blanditiis cum doloribus eos eveniet hic in inventore ipsum labore laboriosam, laudantium libero minus mollitia nemo obcaecati perspiciatis, possimus quidem quo quod repudiandae saepe sit suscipit temporibus ut veritatis vero vitae voluptatibus! A accusantium aspernatur autem cupiditate deserunt earum error esse eveniet ex, exercitationem explicabo harum id in incidunt, ipsa iste iure laborum magnam maiores necessitatibus omnis porro quae quia quidem quis quos soluta, tempore unde voluptate voluptatibus.",
+    "image": "https://images.pexels.com/photos/257840/pexels-photo-257840.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     "comments": [],
+    "republish": [],
     "likes": []
   },
   {
@@ -58,9 +61,27 @@
       "avatar": "https://images.pexels.com/photos/449627/pexels-photo-449627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     },
     "createDate": [2019, 1, 11],
-    "text": "",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi consectetur corporis cum dignissimos distinctio ea est eum fuga, nemo, neque non omnis perspiciatis praesentium qui quibusdam ratione rerum unde?",
     "image": "",
     "comments": [],
+    "republish": [],
+    "likes": []
+  },
+  {
+    "id": 5,
+    "isEdited": true,
+    "author": {
+      "id": 123,
+      "firstName": "Vlad",
+      "lastName": "Nolis",
+      "username": "@mitch",
+      "avatar": "https://images.pexels.com/photos/449627/pexels-photo-449627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    "createDate": [2019, 1, 11],
+    "text": "",
+    "image": "https://images.pexels.com/photos/38537/woodland-road-falling-leaf-natural-38537.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "comments": [],
+    "republish": [],
     "likes": []
   }
 ]

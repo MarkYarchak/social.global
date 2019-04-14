@@ -28,5 +28,6 @@ export default {
 <style
   lang="stylus"
         scoped>
-
+  #note-news
+    background-color: #fff
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div id="fixed-left_fast-note">
+  <div id="fast-note-max">
     <div class="fast-note-box">
       <div class="fast-note-box__note-title-box note-title-box">
         <div class="note-title-box__note-title">
@@ -38,14 +38,15 @@ export default {
 <style
   lang="stylus"
         scoped>
-  #fixed-left_fast-note
+  #fast-note-max
     display flex
     justify-content center
     margin-top 10px
+    min-width 100%
+    min-height 100%
   .fast-note-box
-    width 264px
-    height 230px
-    background-color rgba(255,165,0,0.56)
+    min-width 100%
+    min-height 100%
     border-radius 10px
   .fast-note-box__note-title-box
     display flex
@@ -55,13 +56,13 @@ export default {
     flex-flow 1
   .label_fast-note
     margin 0
-    width 100%
+    min-width 100%
     padding 5px 0 5px 15px
+    font-size 26px
   #fast-note:focus
     outline none
   #fast-note
-    width 264px
-    height 200px
+    border 1px dotted red
     resize none
     overflow hidden
     padding 0 10px

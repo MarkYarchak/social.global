@@ -1,6 +1,9 @@
 <template>
   <div id="main-profile_top-menu">
-    <div class="menu-tabs">
+    <div
+      style="background-color: inherit;"
+      class="menu-tabs"
+    >
       <v-tabs
         v-model="active"
         slider-color="none"
@@ -81,6 +84,8 @@ export default {
   #main-profile_top-menu
     display flex
     /*margin 0 0 0 5px*/
+    width 100%
+    justify-content center
   .menu-tabs
     width 100%
   .main-profile_top-menu
@@ -112,4 +117,9 @@ export default {
     padding-top 4px
   .tab-view
     padding 20px
+  .v-tabs__container
+    display flex
+    width 100%
+    justify-content center
+    background-color: #FE8C00
 </style>

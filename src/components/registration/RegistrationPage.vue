@@ -268,9 +268,10 @@ export default {
     display flex
     flex-direction column
     align-items center
-    height 100%
+    justify-content center
     /*background-color: #e65700*/
     background linear-gradient(to bottom, orange, #e65700)
+    flex-grow 1
   .main_header-box
     padding 30px 0 10px 0
   .main_header
