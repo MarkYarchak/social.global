@@ -15,7 +15,7 @@
         </div>
         <div class="title-box__comment-box">
           <div class="comment-box__comment">
-            {{ dialog.messages[-1].text }}
+            {{ dialog.messages[1].text }}
           </div>
         </div>
       </div>
