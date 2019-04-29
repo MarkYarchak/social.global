@@ -7,11 +7,11 @@
         <router-view />
       </div>
     </div>
-    <div
-      style="min-width: 31.7%; min-height: 100%; position: fixed; right: 0"
-    >
+<!--    <div-->
+<!--      style="min-width: 31.7%; min-height: 100%; position: fixed; right: 0"-->
+<!--    >-->
 <!--      <FastNoteMax />-->
-    </div>
+<!--    </div>-->
   </div>
 </template>
 
@@ -34,7 +34,7 @@ export default {
     ]),
   },
   beforeCreate() {
-    if (this.$router.currentRoute.fullPath === '/') this.$router.push(`/${this.$store.state.user.username}`);
+    if (this.$router.currentRoute.fullPath === '/') this.$router.replace(`/${this.$store.state.user.username}`);
   },
 };
 </script>
@@ -50,6 +50,11 @@ export default {
   .box-view_content
     margin-left 300px
 
+  @media (max-width: 1300px) {
+    .box-view_content {
+      width: 988px
+    }
+  }
 
   @media (min-height: 700px) {
     #full-sign-up-page {

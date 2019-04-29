@@ -7,27 +7,6 @@
         <OnePostNoteFooter :onenote="onenote" />
       </div>
       <OnePostNoteRightPanel :onenote="onenote" />
-<!--      {{ onenote }}-->
-<!--      <br>-->
-<!--      <br>-->
-<!--      <br>-->
-<!--      <i class="far fa-square"></i><i class="fas fa-check"></i><i class="far fa-check-square"></i>-->
-<!--      <div-->
-<!--        @click="haah"-->
-<!--      >-->
-<!--        <i-->
-<!--          class="far fa-square fa-3x"-->
-<!--          style="color: black"-->
-<!--        ></i>-->
-<!--        <span-->
-<!--          v-if="lol"-->
-<!--        >-->
-<!--          <i-->
-<!--            class="fas fa-check fa-4x"-->
-<!--            data-fa-transform="left-12 up-1"-->
-<!--          ></i>-->
-<!--        </span>-->
-<!--      </div>-->
     </div>
   </div>
 </template>
@@ -52,16 +31,6 @@ export default {
       default: () => {},
     },
   },
-  data() {
-    return {
-      lol: false,
-    };
-  },
-  methods: {
-    haah() {
-      this.lol = !this.lol;
-    },
-  },
 };
 </script>
 
@@ -74,10 +43,14 @@ export default {
     color black
   .note-news__one-post-note
     /*border 2px solid black*/
-    box-shadow 0 0 10px 0 grey
+    box-shadow inset 0 0 40px 0 #c9c9c9
+    border 1px solid #dbd2b9
     border-radius 15px
+    background-color: #f8f8f8
     display flex
   .one-post-note__post-data
-    padding 10px
-    width 100%
+    flex-grow 1
+    display flex
+    flex-direction column
+    justify-content space-between
 </style>

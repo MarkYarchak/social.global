@@ -8,7 +8,7 @@
       </div>
       <div class="note-right-panel__add-to-notes-box add-to-notes-box">
         <div class="add-to-notes-box__add-to-notes">
-          <i class="fas fa-pen-square fa-3x"></i>
+          <i class="fas fa-plus-square fa-3x"></i>
           <div class="add-to-notes__text">
             To my notes
           </div>
@@ -17,7 +17,7 @@
       <div class="note-right-panel__checking-box checking-box">
         <div
           class="checking-box__check-box"
-          @click="checked = !checked"
+          @click="tickOf"
         >
           <i
             v-if="!checked"
@@ -56,21 +56,39 @@ export default {
       checked: false,
     };
   },
+  methods: {
+    tickOf() {
+      this.checked = !this.checked;
+    },
+  },
 };
 </script>
 
 <style
   lang="stylus"
         scoped>
+  /*#one-post_note-right-panel:not(:hover)*/
+  /*  transition 1s*/
+  /*#one-post_note-right-panel:hover*/
+  /*  transition 1s*/
   #one-post_note-right-panel
     min-width 100px
     max-width 100px
-    background-color: inherit
+    padding 10px 0
+    /*background-color: orange*/
     border-radius 0 15px 15px 0
-    border-left 2px groove black
+    /*box-shadow inset 0 0 756px 1px #eaeaea*/
+    border-left 1px solid #c4c4ff
+    /*border-left 4px solid #5168ff*/
+    /*border 4px solid #9fa3ff*/
+    /*box-shadow inset 0 0 7px 1px #d2d2d2*/
     flex-grow 1
     display flex
     flex-direction column
+    user-select none
+    -ms-user-select none
+    -moz-user-select none
+    -webkit-user-select none
   .one-post__note-right-panel
     font-weight bold
     justify-content space-between
@@ -82,8 +100,11 @@ export default {
     margin-top 10px
   .note-right-panel__checking-box
     text-align center
+  .checking-box__check-box
+    cursor pointer
   .note-right-panel__add-to-notes-box
     text-align center
   .thumb-up-box__thumb-up-text
     text-align center
+    margin-bottom 10px
 </style>

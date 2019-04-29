@@ -3,12 +3,15 @@ import './plugins/vuetify';
 import Vuelidate from 'vuelidate';
 import V2LazyList from 'v2-lazy-list';
 import NProgress from 'nprogress';
+import VueMobileDetection from 'vue-mobile-detection';
 import NoteMePro from './NoteMePro';
 import router from './router';
 import store from './store';
 import './registerServiceWorker';
 import 'beautify-scrollbar/dist/index.css';
 import '../node_modules/nprogress/nprogress.css';
+
+Vue.use(VueMobileDetection);
 
 Vue.config.productionTip = false;
 Vue.use(Vuelidate);

@@ -38,9 +38,10 @@ export default {
 <style
   lang="stylus"
         scoped>
+  #one-post_note-content
+    padding 15px
   .one-post__note-content
     display flex
-    margin 12px 0
   .image-box__image
     //border 2px solid rgba(26, 26, 26, 0.91)
     //box-shadow inset 0 0 10px 5px #bfbfbf
@@ -50,8 +51,12 @@ export default {
   .note-content__image-box
     display flex
   .note-content__text-box
+    margin 0 0 0 10px
+    display flex
+    flex-direction column
+    justify-content center
+  .text-box__text
     border-left: 2px solid grey
     border-right 2px solid grey
-    margin 0 0 0 10px
     padding 5px 10px
 </style>

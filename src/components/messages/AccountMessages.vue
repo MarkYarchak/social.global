@@ -1,13 +1,25 @@
 <template>
-  
+  <div id="account-messages">
+    <AccountMessagesTopString />
+    <AccountMessagesList />
+  </div>
 </template>
 
 <script>
-  export default {
-    name: "AccountMessages"
-  }
+import AccountMessagesTopString from './AccountMessagesTopString';
+import AccountMessagesList from './AccountMessagesList';
+
+export default {
+  name: 'AccountMessages',
+  components: {
+    AccountMessagesTopString,
+    AccountMessagesList,
+  },
+};
 </script>
 
-<style scoped>
+<style
+  lang="stylus"
+        scoped>
 
 </style>

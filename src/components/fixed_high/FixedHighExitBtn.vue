@@ -21,7 +21,7 @@
 
         <v-card>
           <v-card-title
-            class="headline grey lighten-2"
+            class="headline orange darken-1"
             primary-title
           >
             Sign out
@@ -36,7 +36,7 @@
           <v-card-actions>
             <v-spacer></v-spacer>
             <v-btn
-              color="primary"
+              color="orange darken-2"
               flat
               class="button-to-exit"
               @click="$router.push('/registration')"
@@ -66,5 +66,7 @@ export default {
   lang="stylus"
         scoped>
   .button-to-exit:active
+    outline none
+  .button-to-exit:focus
     outline none
 </style>

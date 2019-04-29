@@ -24,7 +24,7 @@
       <div class="note-header__date-box date-box">
         <div class="date-box__time-ago-box time-ago-box">
           <div class="time-ago-box__time-ago">
-            {{ postDateAgo }}
+            Posted {{ postDateAgo }}
           </div>
         </div>
       </div>
@@ -58,7 +58,7 @@ export default {
         scoped>
   @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Rubik');
   #one-post_note-header
-    padding 10px 15px 7px 7px
+    padding 25px 25px 10px 25px
   .one-post_note-header
     display flex
     justify-content space-between
@@ -82,4 +82,10 @@ export default {
     justify-content center
     padding 0 12px
     font-family: 'Rubik', sans-serif;
+  .note-header__date-box
+    display flex
+  .date-box__time-ago-box
+    display flex
+    flex-direction column
+    justify-content center
 </style>

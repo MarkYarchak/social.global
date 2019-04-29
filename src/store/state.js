@@ -4,6 +4,7 @@ import likedMusic from '../dataStore/likedMusic';
 import playlists from '../dataStore/playlists';
 import myGroups from '../dataStore/myGroups';
 import followedGroups from '../dataStore/followedGroups';
+import dialogs from '../dataStore/dialogs';
 import messages from '../dataStore/messages';
 import noteNews from '../dataStore/noteNews';
 import notes from '../dataStore/notes';
@@ -26,6 +27,7 @@ export default {
       myGroups,
       followedGroups,
     },
+    dialogs,
     messages,
     notes,
     noteNews,

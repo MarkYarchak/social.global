@@ -20,7 +20,7 @@
                 class="mx-0"
                 color="orange"
                 large
-                @click="$router.push('/profile')"
+                @click="$router.push(`/${user.username}`)"
               >
                 Go to your profile
               </v-btn>
@@ -33,8 +33,18 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
   name: 'WelcomePage',
+  computed: {
+    ...mapGetters([
+      'user',
+    ]),
+  },
+  created() {
+    // this.$router.replace(`/${this.user.username}`);
+  },
 };
 </script>
 
