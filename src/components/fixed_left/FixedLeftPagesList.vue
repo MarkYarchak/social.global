@@ -36,9 +36,9 @@ export default {
           path: '/friends',
         },
         {
-          name: 'My messages',
+          name: 'My dialogs',
           icon: 'fas fa-envelope',
-          path: '/messages',
+          path: '/dialogs',
         },
         {
           name: 'My notes',

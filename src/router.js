@@ -6,7 +6,7 @@ import WelcomePage from './components/account_entered/WelcomePage';
 import FullSignUpPage from './components/account_entered/FullSignUpPage';
 import MainProfile from './components/profile/MainProfile';
 import AccountFriends from './components/friends/AccountFriends';
-import AccountMessages from './components/messages/AccountMessages';
+import AccountDialogs from './components/dialogs/AccountDialogs';
 import AccountMusic from './components/music/AccountMusic';
 import AccountNotes from './components/notes/AccountNotes';
 import AccountGroups from './components/groups/AccountGroups';
@@ -47,9 +47,9 @@ export default new Router({
           path: '/friends',
         },
         {
-          name: 'AccountMessages',
-          component: AccountMessages,
-          path: '/messages',
+          name: 'AccountDialogs',
+          component: AccountDialogs,
+          path: '/dialogs',
         },
         {
           name: 'AccountMusic',

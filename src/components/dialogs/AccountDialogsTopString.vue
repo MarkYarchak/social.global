@@ -13,12 +13,10 @@
         <div class="search-box__input-box input-box">
           <input
             v-model="searchMessageInput"
-            placeholder="Search in messages..."
+            :placeholder="`Search in ${$router.currentRoute.fullPath
+              === '/dialogs' ? 'dialogs' : 'messages'}...`"
             class="input-box__search-messages"
           >
-        </div>
-        <div class="search-box__button-box button-box">
-          <i class="fas fa-search"></i>
         </div>
       </div>
       <v-spacer />
@@ -27,7 +25,9 @@
           <template v-slot:activator="{ on }">
             <div
               class="items-box__unread-messages one-item-box"
+              :class="{'background-active-item-true': showOnlyUnreadMessages}"
               v-on="on"
+              @click="switchOnlyUnreadMessages"
             >
               <i class="far fa-envelope"></i>
             </div>
@@ -38,6 +38,7 @@
           <template v-slot:activator="{ on }">
             <div
               class="items-box__laid-down-messages one-item-box"
+              :class="{'background-active-item-true': showOnlyLaidDownMessages}"
               v-on="on"
             >
               <i class="far fa-bookmark"></i>
@@ -62,12 +63,27 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
   name: 'AccountMessagesTopString',
   data() {
     return {
       searchMessageInput: '',
+      showOnlyUnreadMessages: false,
+      showOnlyLaidDownMessages: false,
     };
+  },
+  computed: {
+    ...mapGetters([
+      'user',
+    ]),
+  },
+  methods: {
+    switchOnlyUnreadMessages() {
+      this.showOnlyUnreadMessages = !this.showOnlyUnreadMessages;
+      this.$emit('show-only-unread-mess', this.showOnlyUnreadMessages);
+    },
   },
 };
 </script>
@@ -84,24 +100,21 @@ export default {
     background-color: #ffba3b
   .top-string__search-box
     display flex
-    background-color: #FE8C00
+    background-color: #fe7c00
     color black
     padding 6px
-    border-radius 10px
     border 1px solid black
-  .search-box__button-box
-    padding 0 3px
-    cursor pointer
-  /*.search-box__button-box:hover*/
-  /*  border-radius 50%*/
-  /*  background-color: orange*/
   .input-box__search-messages::placeholder
     color black
   .input-box__search-messages
     width 270px
     padding 0 5px
+  .input-box__search-messages:not(:focus)
+    transition 0.4s
   .input-box__search-messages:focus
     outline none
+    transition 0.4s
+    width 340px
   .top-string__items-box
     display flex
     font-size 30px
@@ -119,6 +132,8 @@ export default {
     font-family: 'Lato', sans-serif;
     font-weight bold
     letter-spacing 0.1px
+  .background-active-item-true
+    background-color: #ffac21
   @media (max-width: 1300px) {
     .top-string {
       width: 988px
