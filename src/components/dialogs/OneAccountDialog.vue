@@ -81,17 +81,17 @@ export default {
         scoped>
   @import url('https://fonts.googleapis.com/css?family=Heebo|Noto+Sans+KR');
   #one-account-dialog
-    display flex
-    padding 7px 5px 7px 13px
-  #one-account-dialog:hover
-    background-color: #ffb329
-    cursor pointer
-  #one-account-dialog:not(:hover)
-    transition 0.1s
+    border-bottom 1px solid #ffb329
   .one-account-dialog
     display flex
+    padding 7px 5px 7px 13px
     flex-grow 1
     justify-content space-between
+  .one-account-dialog:hover
+    background-color: #ffb329
+    cursor pointer
+  .one-account-dialog:not(:hover)
+    transition 0.1s
   .dialog_left-part
     display flex
     flex-grow 1
@@ -140,7 +140,7 @@ export default {
     justify-content center
   .incoming-messages-box__unread-messages
     background linear-gradient(to bottom, #ffb329, orange)
-    box-shadow 0 0 4px 2px #e8e8e8
+    box-shadow 0 0 7px 3px white
     border-radius 10px
     /*background-color: #fe2f54*/
     color black
