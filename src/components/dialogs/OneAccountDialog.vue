@@ -18,7 +18,12 @@
             </div>
           </div>
           <div class="title-box__last-message-box">
-            <div class="last-message-box__last-message">
+            <div
+              ref="dialogLastMessageText"
+              :class="showOneDialogItems ?
+                'last-message-box__last-message--full'
+                : 'last-message-box__last-message'"
+            >
               {{ dialog.messages[0].text }}
             </div>
           </div>
@@ -41,26 +46,44 @@
           </div>
         </div>
         <div class="one-account-dialog__slide-more-box slide-more-box">
-          <div class="slide-more-box__slide-more">
-            <i class="fas fa-chevron-down fa-lg"></i>
+          <div
+            class="slide-more-box__slide-more"
+            @click="switchSlideMore"
+          >
+            <i
+              :class="['fas fa-lg', !showOneDialogItems
+                ? 'fa-chevron-down' : 'fa-chevron-up']"
+            ></i>
           </div>
         </div>
       </div>
     </div>
+    <OneDialogItems
+      v-if="showOneDialogItems"
+    />
   </div>
 </template>
 
 <script>
 import moment from 'moment';
 import { mapGetters } from 'vuex';
+import OneDialogItems from './OneDialogItems';
 
 export default {
   name: 'OneAccountMessage',
+  components: {
+    OneDialogItems,
+  },
   props: {
     dialog: {
       type: Object,
       default: () => {},
     },
+  },
+  data() {
+    return {
+      showOneDialogItems: false,
+    };
   },
   computed: {
     getLastMessageCreateTime() {
@@ -73,6 +96,11 @@ export default {
       'user',
     ]),
   },
+  methods: {
+    switchSlideMore() {
+      this.showOneDialogItems = !this.showOneDialogItems;
+    },
+  },
 };
 </script>
 
@@ -82,14 +110,14 @@ export default {
   @import url('https://fonts.googleapis.com/css?family=Heebo|Noto+Sans+KR');
   #one-account-dialog
     border-bottom 1px solid #ffb329
+  #one-account-dialog:hover
+    background-color: #ffb329
+    cursor pointer
   .one-account-dialog
     display flex
     padding 7px 5px 7px 13px
     flex-grow 1
     justify-content space-between
-  .one-account-dialog:hover
-    background-color: #ffb329
-    cursor pointer
   .one-account-dialog:not(:hover)
     transition 0.1s
   .dialog_left-part
@@ -122,7 +150,6 @@ export default {
     max-width 705px
     transition 0.7s
   .last-message-box__last-message--full
-    //
     transition 0.7s
   .one-account-dialog__count-inf
     display flex
@@ -134,6 +161,10 @@ export default {
     justify-content center
     display flex
     letter-spacing -0.2px
+    user-select none
+    -webkit-user-select none
+    -moz-user-select none
+    -ms-user-select none
   .count-inf__unread-messages-box
     width 100px
     display flex
@@ -148,6 +179,10 @@ export default {
     margin 2px
     font-family: 'Heebo', sans-serif;
     font-weight bold
+    user-select none
+    -webkit-user-select none
+    -moz-user-select none
+    -ms-user-select none
   .one-account-dialog__slide-more-box
     flex-grow 1
     display flex
@@ -155,6 +190,12 @@ export default {
     flex-direction column
     width 70px
     align-items center
+    align-self flex-start
   .slide-more-box__slide-more
     cursor pointer
+    width 45px
+    height 45px
+    display flex
+    justify-content center
+    align-items center
 </style>
