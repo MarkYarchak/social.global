@@ -7,15 +7,16 @@
       >
         <template v-slot:activator="{ on }">
           <v-btn
-            :color="changeBtnTheme ? 'yellow lighten-2' : 'black lighten-2'"
             dark
-            flat
-            class="button-to-exit"
-            @mouseenter="changeBtnTheme = true"
-            @mouseleave="changeBtnTheme = false"
+            depressed
+            fab
+            text
+            small
+            class="logout-activator-btn"
+            style="margin-right: 16px;"
             v-on="on"
           >
-            <i class="fas fa-sign-out-alt fa-2x"></i>
+            <v-icon>input</v-icon>
           </v-btn>
         </template>
 
@@ -65,8 +66,8 @@ export default {
 <style
   lang="stylus"
         scoped>
-  .button-to-exit:active
+  .logout-activator-btn:hover
     outline none
-  .button-to-exit:focus
+  .logout-activator-btn:active
     outline none
 </style>

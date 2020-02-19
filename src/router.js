@@ -3,7 +3,7 @@ import Router from 'vue-router';
 import store from './store';
 import RegistrationPage from './components/registration/RegistrationPage';
 import WelcomePage from './components/account_entered/WelcomePage';
-import FullSignUpPage from './components/account_entered/FullSignUpPage';
+import FullAccountPage from './components/account_entered/FullAccountPage';
 import MainProfile from './components/profile/MainProfile';
 import AccountFriends from './components/friends/AccountFriends';
 import AccountDialogs from './components/dialogs/AccountDialogs';
@@ -27,8 +27,8 @@ export default new Router({
       path: '/registration',
     },
     {
-      name: 'FullSignUpPage',
-      component: FullSignUpPage,
+      name: 'FullAccountPage',
+      component: FullAccountPage,
       path: '/',
       children: [
         {
@@ -90,7 +90,7 @@ export default new Router({
     },
     {
       path: '*',
-      component: FullSignUpPage,
+      component: FullAccountPage,
     },
   ],
   scrollBehavior(to, from, savedPosition) {

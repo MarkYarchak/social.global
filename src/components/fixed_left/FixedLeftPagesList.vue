@@ -97,7 +97,7 @@ export default {
     -ms-user-select none
     -webkit-user-select none
   .one-page-link-box__one-page-link:not(:hover)
-    transition 0.6s
+    transition 0.35s
   .one-page-link-box__one-page-link:hover
     transition 0.2s
     background-color: orange

@@ -1,6 +1,6 @@
 <template>
   <div id="fixed-left">
-    <div class="fixed-left">
+    <div>
       <FixedLeftUserBox />
       <FixedLeftPagesList />
     </div>
@@ -25,11 +25,9 @@ export default {
         scoped>
   #fixed-left
     z-index 2
-    position fixed
-    left 0
-    top 67px
-    max-width 300px
+    position sticky
+    top 68px
+    min-width 300px
     background-color: #e65700
-    height 100%
-    width 100%
+    height: calc(100vh - 68px);
 </style>

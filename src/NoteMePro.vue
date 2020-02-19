@@ -23,16 +23,17 @@ lang="stylus"
 >
   #app
     /*color white*/
-    background-color: #fff
+    // background-color: #fff
     display flex
     justify-content center
     align-items center
-    background linear-gradient(to bottom, orange, #e65700)
-  router-view
-    display flex
-    justify-content center
-    align-items center
-  @media (min-height: 700px) {
+    // background linear-gradient(to bottom, orange, #e65700)
+    background-color: #ff9200
+  /*router-view*/
+    /*display flex*/
+    /*justify-content center*/
+    /*align-items center*/
+ /* @media (min-height: 700px) {
     #app {
       min-height: 700px
     }
@@ -103,5 +104,5 @@ lang="stylus"
     #registration-page {
       min-height: 1050px
     }
-  }
+  }*/
 </style>

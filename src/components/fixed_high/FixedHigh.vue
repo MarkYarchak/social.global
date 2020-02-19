@@ -1,5 +1,8 @@
 <template>
-  <div id="fixed-high">
+  <div
+    id="fixed-high"
+    class="elevation-7"
+  >
     <div class="fixed-high">
       <div class="fixed-high__logo-box">
         <h1 style="margin: 0">
@@ -10,10 +13,8 @@
         <v-text-field
           label="Search"
           color="yellow"
-        ></v-text-field>
-        <button class="box-search_icon">
-          <i class="fas fa-search"></i>
-        </button>
+          append-icon="search"
+        />
       </div>
       <v-spacer />
       <FixedHighExitBtn />
@@ -42,7 +43,10 @@ export default {
     align-items center
     position sticky
     top 0
-    background linear-gradient(to bottom, #cd2a00, #FE8C00)
+    //box-shadow 0 4px 10px 3px rgba(25, 25, 25, 0.86)
+    // border-bottom 1px solid rgba(25, 25, 25, 0.86)
+    background-color: #ff5100
+    // background linear-gradient(to bottom, #cd2a00, #FE8C00)
   /*box-shadow 0 1px 7px 5px #e77314*/
   .fixed-high
     width 100%
@@ -61,9 +65,6 @@ export default {
     margin 0 20px
     display: flex
     align-items center
-  .box-search_icon
-    color black
-    width 25px
   .box-search_icon:focus
     outline none
   .box-search_icon:not(:hover)
